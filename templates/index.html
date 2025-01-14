@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Our Inbox</h1>
+    <script>
+        alert('Message sent Successful')
+
+    </script>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Email</th>
+                <th>Sender</th>
+                <th>Recipient</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        {%for email in emails%}
+        <tbody>
+            <td>{inbox[0]}</td>
+            <td>{inbox[1]}</td>
+            <td>{inbox[2]}</td>
+            <td>{inbox[3]}</td>
+            <td>{inbox[4]}</td>
+        </tbody>
+        {% endfor%}
+    </table>
+
+</body>
+</html>
